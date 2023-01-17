@@ -38,9 +38,14 @@ mvn archetype:generate -DgroupId=one.digitalinnovation -DartifactId=quick-start-
 
 ## Comandos
 
+### Todas classes são compiladas e inseridas na pasta ../target/classes
+
 mvn compile
 
-# Todas classes são compiladas e inseridas na pasta ../target/classes
+### testa a aplicação
 
 mvn test
+
+### cria o jar da aplicação
+
 mvn package
