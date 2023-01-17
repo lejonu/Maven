@@ -42,10 +42,25 @@ mvn archetype:generate -DgroupId=one.digitalinnovation -DartifactId=quick-start-
 
 mvn compile
 
-### testa a aplicação
+### Testa a aplicação
 
 mvn test
 
-### cria o jar da aplicação
+### Cria o jar da aplicação
 
 mvn package
+
+### Apagar a pasta ../target
+
+mvn clean
+
+## Criando diferentes tipos de projetos com o maven-archetype
+
+Pesquisar: "maven archetype list"
+Procure pelas instruções de execução do comando mvn archetype
+
+[maven archetype list]: https://maven.apache.org/archetypes/ "Maven archetype list"
+
+## Web archetype
+
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
