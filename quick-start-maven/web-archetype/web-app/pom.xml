@@ -21,11 +21,18 @@
 
   <dependencies>
     <dependency>
+      <groupId>one.digitalinnovation</groupId>
+      <artefactId>app-spring</artefactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
   <build>

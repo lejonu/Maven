@@ -128,15 +128,45 @@ Ir no arquivo pom.xml e procurar pela tag:
 
 ```xml
 <dependencies>
-  <dependency>
-    <groupId>one.digitalinnovation</groupId>
-    <artefactId>app-spring</artefactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.8.9</version>
+    </dependency>
     <groupId>org.hibernate</groupId>
     <artefactId>hibernate-search-orm</artefactId>
     <version>5.11.9.Final</version>
   </dependency>
 </dependencies>
 ```
+
+## Tipos de dependências
+
+```xml
+<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.9</version>
+</dependency>
+```
+
+## Publicar componentes utilizando o Maven
+
+Cria uma dependência no repositório local
+
+```bash
+#!/bin/bash
+mvn install
+```
+
+Em outro projeto adiocione a tag dependencie e o:
+
+```java
+ import one.digitalinnovation.component.NomeDaClasse
+```
+
+Existem dois tipos de dependências:
+
+- Diretas: dependências declaradas no pom.xml
+- Transitiva: dependências obrigatórias das dependẽncias declaradas no pom.xml
