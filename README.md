@@ -35,3 +35,12 @@ mvn --version
 ## Criando um projeto na linha de comando
 
 mvn archetype:generate -DgroupId=one.digitalinnovation -DartifactId=quick-start-maven -Darchetype=maven-archetype-quickstart -DinterativeMode=false
+
+## Comandos
+
+mvn compile
+
+# Todas classes são compiladas e inseridas na pasta ../target/classes
+
+mvn test
+mvn package
